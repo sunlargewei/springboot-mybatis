@@ -1,0 +1,15 @@
+server:
+  port: 8082
+
+spring:
+    thymeleaf:
+       prefix: classpath:/templates/
+    mvc:
+      static-path-pattern: /static/**
+    datasource:
+      url: jdbc:mysql://localhost:3306/car
+      username: root
+      password : 123
+      driver-class-name : com.mysql.jdbc.Driver
+mybatis:
+    mapper-locations : classpath:mapper/*.xml
